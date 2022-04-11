@@ -89,7 +89,7 @@ h3 {
 }
 
 fieldset {
-    border: 1px solid white;
+    border: 1px solid rgb(255, 255, 255);
     margin: 5%;
     padding: 3%;
     border-radius: 5px;
@@ -124,6 +124,18 @@ fieldset {
     background-repeat: no-repeat;
     background-position: center;
     padding: 7% 0;
+    animation-name: scale-in;
+    animation-duration: .9s;
+}
+
+@keyframes scale-in {
+    0% {
+        font-size: 0%;
+    }
+
+    100% {
+        font-size: 100%;
+    }
 }
 
 .food-search input[type="search"] {
@@ -146,5 +158,6 @@ fieldset {
     font-size: 250%;
     margin: 0%;
     padding: 5%;
-    color: #c5cfc8;
+    color: #ffffff;
+    -webkit-transition: transform 2s ease-out;
 }
