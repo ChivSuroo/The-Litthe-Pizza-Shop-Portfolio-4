@@ -1,11 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Mohave:wght@300;400&display=swap');
+
 * {
     margin: 0 0;
     padding: 0 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: mohave;
 }
 
 .container {
-    width: 50%;
+    width: 60%;
     margin: 0 auto;
     padding: 1%;
 }
@@ -21,7 +23,7 @@
 .text-right {
     padding-top: 2%;
     text-align: right;
-    font-size: large;
+    font-size: 150%;
 }
 
 .text-center {
@@ -44,6 +46,8 @@
 a {
     color: #070707;
     text-decoration: none;
+    transition: transform .5s;
+    /* Animation */
 }
 
 a:hover {
@@ -101,6 +105,13 @@ fieldset {
 .logo {
     width: 10%;
     float: left;
+    transition: transform .5s;
+    /* Animation */
+}
+
+.logo:hover {
+    transform: scale(1.1);
+    /* (110% zoom - This is when you put your cursor over the logo) */
 }
 
 .menu {
@@ -151,6 +162,11 @@ fieldset {
     text-align: center;
 }
 
+.social-networks i:hover {
+    transform: scale(1.5);
+    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
 .social-networks>li {
     display: inline;
 }
@@ -160,5 +176,22 @@ fieldset {
     margin: 0%;
     padding: 5%;
     color: #ffffff;
-    -webkit-transition: transform 2s ease-out;
+    transition: transform .5s;
+    /* Animation */
 }
+
+.categories {
+    padding: 4% 0;
+    background-color: #e6e4e4;
+}
+
+.box-3 {
+    width: 28%;
+    float: left;
+    margin: 2%;
+    transition: transform .6s; /* Animation */
+}
+
+.box-3:hover {
+    transform: scale(.9); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
