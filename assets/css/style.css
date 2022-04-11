@@ -48,6 +48,7 @@ a {
 
 a:hover {
     color: #899094;
+    transform: scale(1.5);
 }
 
 .btn {
