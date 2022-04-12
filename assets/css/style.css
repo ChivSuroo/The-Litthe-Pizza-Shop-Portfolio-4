@@ -102,31 +102,7 @@ fieldset {
 
 /* Navigation Bar */
 
-.logo {
-    width: 10%;
-    float: left;
-    transition: transform .5s;
-    /* Animation */
-}
 
-.logo:hover {
-    transform: scale(1.1);
-    /* (110% zoom - This is when you put your cursor over the logo) */
-}
-
-.menu {
-    line-height: 60px;
-}
-
-.menu ul {
-    list-style-type: none;
-}
-
-.menu ul li {
-    display: inline;
-    padding: 1%;
-    font-weight: bold;
-}
 
 /* Food Search Section */
 
@@ -189,65 +165,71 @@ fieldset {
     width: 28%;
     float: left;
     margin: 2%;
-    transition: transform .6s; /* Animation */
+    transition: transform .6s;
+    /* Animation */
 }
 
 .box-3:hover {
-    transform: scale(.9); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-  }
+    transform: scale(.9);
+    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
 
-  /* CSS for Mobile Size or Smaller Screen */
+/* CSS for Mobile Size or Smaller Screen */
 
-@media only screen and (max-width:768px){
-    .logo{
+@media only screen and (max-width:768px) {
+    .logo {
         width: 80%;
         float: none;
         margin: 1% auto;
     }
 
-    .menu ul{
+    .menu ul {
         text-align: center;
     }
 
-    .food-search input[type="search"]{
+    .food-search input[type="search"] {
         width: 90%;
         padding: 2%;
         margin-bottom: 3%;
     }
 
-    .btn{
+    .btn {
         width: 91%;
         padding: 2%;
     }
 
-    .food-search{
+    .food-search {
         padding: 10% 0;
     }
 
-    .categories{
+    .categories {
         padding: 20% 0;
     }
-    h2{
+
+    h2 {
         margin-bottom: 10%;
     }
-    .box-3{
+
+    .box-3 {
         width: 100%;
         margin: 4% auto;
     }
 
-    .food-menu{
+    .food-menu {
         padding: 20% 0;
     }
 
-    .food-menu-box{
+    .food-menu-box {
         width: 90%;
         padding: 5%;
         margin-bottom: 5%;
     }
-    .social{
+
+    .social {
         padding: 5% 0;
     }
-    .order{
+
+    .order {
         width: 100%;
     }
 }
